@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', (ev) => {
     const story = document.querySelector('main div');
     const storyList = document.querySelector('main div ol');
 
-    const offSetTime = data.words[0].start / 1000;
     let parent;
 
     let gap = {
@@ -28,9 +27,7 @@ window.addEventListener('DOMContentLoaded', (ev) => {
             span.setAttribute('data-index', wordIndex);
             dd.appendChild(span);
         }
-        dl.appendChild(dt).appendChild(dd);
-        li.appendChild(dl);
-        storyList.appendChild(li);
+        storyList.appendChild(li).appendChild(dl).append(dt, dd);
     }
 
     const spans = story.querySelectorAll('span');
