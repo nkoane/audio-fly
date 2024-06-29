@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    place-items: center;
+    display: grid;
+    height: 100vh;
+}
+
+main {
+    width: 60vw;
+    max-width: 800px;
+    aspect-ratio: 6/1;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    padding: 8rem 0;
+
+    audio {
+        display: block;
+        background-color: #cf4;
+        border-radius: 1.4rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    p {
+        color: #4cf;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    button {
+        border: none;
+        background: none;
+        padding: 0.6rem;
+        background-color: #4fc;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        box-shadow: 0px 0px 20px #f8f;
+        transition: all 1s;
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 5px #88f;
+            background-color: #000;
+            color: #fff;
+        }
+
+        &:active {
+            box-shadow: 0px 0px 20px #8f8;
+            transform: skew(10deg);
+        }
+
+        &:disabled {
+            background-color: #888;
+            color: #444;
+            box-shadow: 0px 0px 20px #f8f;
+            cursor: not-allowed;
+        }
+    }
+
+    div.story {
+        margin: 0.5rem 0;
+        background-color: #4cf;
+        padding: 2rem;
+        font-family: Helvetica, Arial, sans-serif;
+        width: 100%;
+        line-height: 1.4rem;
+        border-radius: 1rem;
+
+        span {
+            color: #fff;
+            margin: 0 0.2rem;
+            display: inline-block;
+            &:hover {
+                cursor: pointer;
+                background-color: #ff0;
+                color: #000;
+            }
+
+            &.selected {
+                background-color: #ff0;
+                color: #000;
+            }
+        }
+
+        ol li dl.hide dd {
+            display: none;
+        }
+    }
+}
