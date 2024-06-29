@@ -1,6 +1,6 @@
 # Fly
 
-I do not know why it is called fly, but it was inspired by a music band called, *audio fly*. Alas, this project was mere simulation of how to have audio playback visually tracked by the transcript that comes with it.
+I do not know why it is called fly, but it was inspired by a music band called, [*audio fly*](https://soundcloud.com/vankodeephouse/audiofly-feat-cari-golden?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing). Alas, this project was mere simulation of how to have audio playback visually tracked by the transcript that comes with it.
 
 ## Installation
 
@@ -12,7 +12,7 @@ Just fire up vite.
 
 ## Playback controls
 
-It follows the *vim* way: `h, j, k, and l` (`-5s back`, `next speaker`, `previous speaker`, '5s forward`)
+It follows the *vim* way: `h, j, k,` and `l` (`-5s back`, `next speaker`, `previous speaker`, `5s forward`)
 
 ## Questions?
 
